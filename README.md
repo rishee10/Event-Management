@@ -23,26 +23,58 @@ This Django application provides a RESTful API for managing events. Users can cr
 
 1. **Clone the repository** (or download files to your local machine):
 
-```
-git clone https://github.com/rishee10/Event-Management.git
-```
+   ```
+   git clone https://github.com/rishee10/Event-Management.git
+   ```
+
+   ```
+   cd Event-Management
+   ```
 
 
 2. **Create and activate a virtual environment**:
 
-```
-python -m venv venv
-```
+   ```
+   python -m venv venv
+   ```
 
-***Activate on Windows***
-```
-venv\Scripts\activate
-```
+   ***Activate on Windows***
+   ```
+   venv\Scripts\activate
+   ```
 
-***Activate on macOS/Linux***
+    ***Activate on macOS/Linux***
 
-```
-source venv/bin/activate
-```
+    ```
+    source venv/bin/activate
+    ```
+
+3. **Download Dependencies**
+
+   ```
+   pip install -r requirements.txt
+   ```
+
+4. **Run Makemigrations and migrate command**
+
+   ```
+   python manage.py makemigrations
+   ```
+
+   ```
+   python manage.py migrate
+   ```
+5. **Run Server**
+
+   ```
+   python manage.py runserver
+   ```
+
+6. **Run the test cases**
+
+   ```
+   python manage.py test Event
+   ```
+   
 
 
