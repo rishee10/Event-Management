@@ -75,6 +75,32 @@ This Django application provides a RESTful API for managing events. Users can cr
    ```
    python manage.py test Event
    ```
+
+## API Endpoints:
+
+**Event API:**
+
+```POST /events/``` : Create a new event (authenticated users only).
+
+```GET /events/``` : List all public events (with pagination).
+
+```GET /events/{id}/``` : Get details of a specific event.
+
+```PUT /events/{id}/``` : Update an event (only the organizer can edit).
+
+```DELETE /events/{id}/``` : Delete an event (only the organizer).
+
+**RSVP API:**
+
+```POST /events/{event_id}/rsvp/``` : RSVP to an event.
+
+```PATCH /events/{event_id}/rsvp/{user_id}/``` : Update RSVP status.
+
+**Review API:**
+
+```POST /events/{event_id}/reviews/``` : Add a review for an event.
+
+```GET /events/{event_id}/reviews/``` : List all reviews for an event.
    
 
 
